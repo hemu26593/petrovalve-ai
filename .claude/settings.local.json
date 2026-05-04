@@ -13,7 +13,25 @@
       "Bash('/mnt/c/Program Files/Git/cmd/git.exe' init)",
       "Bash('/mnt/c/Program Files/Git/cmd/git.exe' branch -m main)",
       "Bash('/mnt/c/Program Files/Git/cmd/git.exe' status --short)",
-      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' add .)"
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' add .)",
+      "Bash($GIT commit *)",
+      "Bash($GIT remote *)",
+      "Bash(gh auth *)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' remote add origin https://github.com/hemu26593/petrovalve-ai.git)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' remote -v)",
+      "Bash($GIT push *)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' pull origin main --allow-unrelated-histories --no-edit)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' push -u origin main)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' checkout --ours README.md .gitignore)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' add README.md .gitignore)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' commit -m 'chore: merge remote init, keep project files')",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' add postman/petrovalve-api.postman_collection.json)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' commit -m 'chore: add Postman collection for all API endpoints *)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' push)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' commit -m 'chore: set collection-level bearer auth for Sanctum token *)",
+      "Bash(/mnt/c/Users/Admin/.config/herd/bin/php84/php.exe artisan *)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' add app/Http/Controllers/Controller.php tests/)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' commit -m 'test: add feature tests for Auth and User endpoints \\(61 tests\\) *)"
     ]
   }
 }
