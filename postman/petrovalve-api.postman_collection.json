@@ -3,6 +3,12 @@
     "name": "Petrovalve API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      { "key": "token", "value": "{{token}}", "type": "string" }
+    ]
+  },
   "variable": [
     {
       "key": "base_url",
@@ -42,6 +48,7 @@
             }
           ],
           "request": {
+            "auth": { "type": "noauth" },
             "method": "POST",
             "header": [
               { "key": "Accept", "value": "application/json" },
@@ -76,6 +83,7 @@
             }
           ],
           "request": {
+            "auth": { "type": "noauth" },
             "method": "POST",
             "header": [
               { "key": "Accept", "value": "application/json" },
@@ -97,8 +105,7 @@
           "request": {
             "method": "GET",
             "header": [
-              { "key": "Accept", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Accept", "value": "application/json" }
             ],
             "url": {
               "raw": "{{base_url}}/api/auth/me",
@@ -113,8 +120,7 @@
             "method": "PUT",
             "header": [
               { "key": "Accept", "value": "application/json" },
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Content-Type", "value": "application/json" }
             ],
             "body": {
               "mode": "raw",
@@ -130,6 +136,7 @@
         {
           "name": "Forgot Password",
           "request": {
+            "auth": { "type": "noauth" },
             "method": "POST",
             "header": [
               { "key": "Accept", "value": "application/json" },
@@ -149,6 +156,7 @@
         {
           "name": "Reset Password",
           "request": {
+            "auth": { "type": "noauth" },
             "method": "POST",
             "header": [
               { "key": "Accept", "value": "application/json" },
@@ -183,8 +191,7 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Accept", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Accept", "value": "application/json" }
             ],
             "url": {
               "raw": "{{base_url}}/api/auth/logout",
@@ -203,8 +210,7 @@
           "request": {
             "method": "GET",
             "header": [
-              { "key": "Accept", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Accept", "value": "application/json" }
             ],
             "url": {
               "raw": "{{base_url}}/api/users?per_page=15",
@@ -235,8 +241,7 @@
             "method": "POST",
             "header": [
               { "key": "Accept", "value": "application/json" },
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Content-Type", "value": "application/json" }
             ],
             "body": {
               "mode": "raw",
@@ -254,8 +259,7 @@
           "request": {
             "method": "GET",
             "header": [
-              { "key": "Accept", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Accept", "value": "application/json" }
             ],
             "url": {
               "raw": "{{base_url}}/api/users/{{user_id}}",
@@ -270,8 +274,7 @@
             "method": "PUT",
             "header": [
               { "key": "Accept", "value": "application/json" },
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Content-Type", "value": "application/json" }
             ],
             "body": {
               "mode": "raw",
@@ -289,8 +292,7 @@
           "request": {
             "method": "DELETE",
             "header": [
-              { "key": "Accept", "value": "application/json" },
-              { "key": "Authorization", "value": "Bearer {{token}}" }
+              { "key": "Accept", "value": "application/json" }
             ],
             "url": {
               "raw": "{{base_url}}/api/users/{{user_id}}",
