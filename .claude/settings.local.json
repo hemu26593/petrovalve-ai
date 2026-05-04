@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer require *)",
+      "Read(//usr/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Bash(/mnt/c/Users/Admin/.config/herd/bin/php84/php.exe --version)",
+      "Bash($PHP require *)",
+      "Bash($PHP *)",
+      "Bash($PHP artisan *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' init)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' branch -m main)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' status --short)",
+      "Bash('/mnt/c/Program Files/Git/cmd/git.exe' add .)"
+    ]
+  }
+}
